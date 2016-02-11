@@ -1,10 +1,10 @@
-# Title
+# Allergies
 
-#### Description and Date
+#### Allergy Notifier
 
-#### Authors
+#### Brad London and Alissa Paluska
 
-## Description
+## Takes in a number, and associates it with an allergen(s).
 
 ## Setup/Installation Requirements
 
