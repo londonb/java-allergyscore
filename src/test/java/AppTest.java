@@ -20,8 +20,17 @@ public class AppTest extends FluentTest {
   @Test
   public void rootTest() {
       goTo("http://localhost:4567/");
-      assertThat(pageSource()).contains("Change");
+      assertThat(pageSource()).contains("Allergy");
   }
+
+  @Test
+  public void AllergyCount() {
+    goTo("http://localhost:4567/");
+    fill("#allergyInput").with("128");
+    submit(".btn");
+    assertThat(pageSource()).contains("Cats: 1");
+  }
+
   @Test
   public void AllergyCount_returnQuantityOfCoins_89() {
     App testAllergy= new App();
